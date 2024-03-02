@@ -1,0 +1,203 @@
+:root {
+  --color-blue-01: #002c6c;
+  --color-blue-02: #566a7f;
+  --color-blue-03: #697a8d;
+  --color-blue-04: #787bff;
+  --color-gray-01: #f5f5f9;
+  --color-gray-02: #b4bdc6;
+  --color-orange-01: #f26434e0;
+  --color-orange-02: #ff4000;
+  --color-white-01: #fff;
+  --color-violet-01: #595cd9;
+  --color-violet-02: #5f61e6;
+  --font-family-public_sans: "Public Sans", sans-serif;
+}
+
+/* column */
+.col.login-card {
+  max-width: 400px;
+  position: relative;
+}
+.col.login.forgot-password {
+  text-align: right !important;
+}
+@media only screen and (max-width: 372px) {
+  .col-xs-6 {
+    width: 100% !important;
+  }
+  .col.login.remember-me {
+    text-align: center !important;
+  }
+  .col.login.forgot-password {
+    text-align: center !important;
+  }
+}
+
+/* body */
+.body.login {
+  background-color: var(--color-gray-01);
+}
+
+/* center */
+.center-element.login {
+  display: flex;
+  min-height: 100vh;
+  padding: 50px 0;
+  align-items: center;
+}
+
+/* logo */
+.logo.login {
+  width: auto;
+  height: 50px;
+  object-fit: cover;
+  text-align: center;
+}
+
+/* title */
+.title.login {
+  font-family: var(--font-family-public_sans);
+  font-size: 22px;
+  color: var(--color-blue-01);
+  padding: 0px;
+  margin: 0px;
+}
+
+/* paragraph */
+.text.signup {
+  font-family: var(--font-family-public_sans);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-blue-03);
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* link */
+a.signup {
+  font-family: var(--font-family-public_sans);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-blue-01);
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+a.signup:hover {
+  color: var(--color-blue-04);
+}
+a.forgot-password {
+  font-family: var(--font-family-public_sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-blue-04);
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* form */
+.form-label {
+  font-family: var(--font-family-public_sans);
+  font-size: 12px;
+  color: var(--color-blue-02);
+  padding: 0 0 10px 0;
+  margin-bottom: 0px !important;
+}
+.form-check-label {
+  font-family: var(--font-family-public_sans);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-blue-03);
+  padding: 0 0 0 5px;
+}
+.form-check-input:focus {
+  border-color: var(--color-blue-01) !important;
+  box-shadow: 0 2px 4px 0 rgba(105, 108, 255, 0.4) !important;
+}
+.form-check-input:checked {
+  background-color: var(--color-blue-01) !important;
+  border-color: var(--color-blue-01) !important;
+  box-shadow: 0 2px 4px 0 rgba(105, 108, 255, 0.4) !important;
+}
+
+/* input */
+input[type="text"] {
+  font-family: var(--font-family-public_sans);
+  font-size: 15px;
+  color: var(--color-blue-03) !important;
+  border: 1px solid black;
+}
+input[type="text"]:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--color-blue-01) !important;
+}
+input[type="text"]::placeholder {
+  font-family: var(--font-family-public_sans);
+  font-size: 15px;
+  color: var(--color-gray-02) !important;
+  transition: 0.5s;
+}
+input[type="text"]:focus::placeholder {
+  padding-left: 7px;
+  transition: 0.5s;
+}
+
+/* card */
+.card.login {
+  border: 0px;
+  box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.12);
+  z-index: 2;
+}
+
+/* button */
+.btn.login {
+  font-family: var(--font-family-public_sans);
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  color: var(--color-white-01);
+  background-color: var(--color-orange-01);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
+}
+.btn.login:hover {
+  color: var(--color-white-01);
+  background-color: var(--color-orange-02);
+}
+.btn.login:focus {
+  color: var(--color-white-01);
+  background-color: var(--color-violet-02);
+}
+.btn.login:active {
+  color: var(--color-white-01);
+  background-color: var(--color-violet-01);
+}
+
+/* image */
+.bg-img.login.top {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  top: -50px;
+  right: -70px;
+}
+.bg-img.login.bottom {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  bottom: -50px;
+  left: -70px;
+}
+@media only screen and (max-width: 425px) {
+  .bg-img.login.top {
+    top: -50px;
+    right: -30px;
+  }
+  .bg-img.login.bottom {
+    bottom: -50px;
+    left: -30px;
+  }
+}
