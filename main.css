@@ -45,6 +45,11 @@
   padding: 50px 0;
   align-items: center;
 }
+@media only screen and (max-width: 425px) {
+  .center-element.login {
+    padding: 20px 0;
+  }
+}
 
 /* logo */
 .logo.login {
